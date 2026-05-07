@@ -1,0 +1,4 @@
+# going to list all the project work flow of data version control
+1.create a git repo and colne it in local system
+2.create a code .py and add code in it.(will save anew CSV file to a new data folder)
+3.
