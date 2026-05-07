@@ -1,6 +1,6 @@
 outs:
-- md5: cce1c58ff29b54f5f8dcb28b9622bf36.dir # this is the id and will change every time we commit data version
-  size: 88
+- md5: fbb8fdf80aadc6a6ccd4c7f91744a2d2.dir # this is the id and will change every time we commit data version
+  size: 104
   nfiles: 1
   hash: md5
   path: data
