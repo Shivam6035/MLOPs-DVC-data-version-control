@@ -1,4 +1,10 @@
 # going to list all the project work flow of data version control
 1.create a git repo and colne it in local system
 2.create a code .py and add code in it.(will save anew CSV file to a new data folder)
-3.
+3.do a git commit add, before initiallizing the DVC.
+4.now we will do dvc initiate " dvc init " (creates .dvcignore ,.dvc) "pip install dvc"
+5.now do mkdir S3 "mkdir S3" to create new directory
+6.add " dvc remote add -d myremote S3 "
+7. add "dvc add data/" -- dvc sees data inside folder and responsible for data versioning
+8.if data is already versioning by git using this cmd you can revoke "git rm -r --cached 'data'" 
+             (git commit -m "stop tracking data") to  stop tracking of data
