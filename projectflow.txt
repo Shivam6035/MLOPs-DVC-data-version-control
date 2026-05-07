@@ -5,6 +5,10 @@
 4.now we will do dvc initiate " dvc init " (creates .dvcignore ,.dvc) "pip install dvc"
 5.now do mkdir S3 "mkdir S3" to create new directory
 6.add " dvc remote add -d myremote S3 "
-7. add "dvc add data/" -- dvc sees data inside folder and responsible for data versioning
-8.if data is already versioning by git using this cmd you can revoke "git rm -r --cached 'data'" 
+7.add "dvc add data/" -- dvc sees data inside folder and responsible for data versioning
+  if data is already versioning by git using this cmd you can revoke "git rm -r --cached 'data'" 
              (git commit -m "stop tracking data") to  stop tracking of data
+             again do the "dvc add data/" then 
+             ("git add data.dvc .gitignore" )    to track the changes 
+             use "dvc status" to check satus and also do "git status"
+8.now "dvc commit" and then "dvc push"  dvc push data is pushed in to S3 
